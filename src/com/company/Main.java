@@ -16,6 +16,7 @@ public class Main {
         int [] massive = new int[size];
         Array arr= new Array();
         //инициализируем массив рандомными числами, в пределе значений массива
+        System.out.println("метод 1");
         arr.initRandom(massive);
         arr.printMass(massive);
         //  сортируем массив при с помощью метода "Пузырек =)"
@@ -23,10 +24,11 @@ public class Main {
         System.out.println("Выводим сортированный массив методом пузырька =)");
         arr.printMass(massive);
 
+
+        System.out.println("метод 2");
+
         arr.initRandom(massive);
         arr.printMass(massive);
-
-
           //сортируем массив при с помощью метода "Пузырек =)" и компоратора
 
         arr.sortBubble(massive, new Comparator<Integer>() {
@@ -48,12 +50,12 @@ public class Main {
 
             }
         });
-        arr.printMass(massive);
-// выводим сортированный массив при помощи пузырька и компоратора, в виде четные идут в прядке убывания, а нечетные в порядке возрастання
-        System.out.println("Выводим сортированный массив методом пузырька =)");
+// выводим сортированный массив при помощи пузырька и компоратора, в виде четные идут в прядке убывания, а нечетные в порядке возрастания
+        System.out.println("Выводим сортированный массив методом пузырька с Comparator=)");
         arr.printMass(massive);
 
 
+        System.out.println("метод 3");
 
         arr.initRandom(massive);
         arr.printMass(massive);
